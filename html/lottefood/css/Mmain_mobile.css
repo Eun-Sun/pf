@@ -1,0 +1,436 @@
+html,body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+body {
+    overflow: hidden;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+    
+main{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.web{
+    display: none;
+}
+/* 배너 */
+main aside.banner_F{
+    position: relative;
+    min-height: 70rem;
+}
+main aside.banner_F>ul>li{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    font-weight: 500;
+}
+main aside>ul>li.ban1{  
+    background: url(../imgs/kid-milk.jpg) no-repeat center/cover;
+}
+main aside>ul>li.ban2{  
+    background: url(../imgs/banner_1.png) no-repeat center/cover;
+
+}
+main aside>ul>li.ban3{  
+    background: url(../imgs/banner_2.png) no-repeat center/cover;
+}
+main aside.banner_F>ul.bannerB>li>div{
+    margin: 0 auto;
+    margin-top: 30rem;
+    min-height: 40rem;
+    text-align: center;
+    font-size: 2.1rem;
+    line-height: 4.2rem;
+    color: #fff;
+}
+
+main aside.banner_F>ul>li.on{
+    display: block;
+    z-index: 10;}
+
+/* 이전, 다음버튼 */
+main aside.banner_F>p img{
+    position: absolute;
+    z-index: 15;
+    height: 5rem;
+    cursor: pointer;
+}
+main aside.banner_F p.prev img{
+    top: 50%; left:calc(50% - 66rem);
+}
+main aside.banner_F p.next img{
+    top: 50%; right:calc(50% - 66rem);
+
+}
+/* 배너버튼 */
+main aside.banner_F>div{
+    position: absolute;
+    left: calc(50% - 11rem); bottom: 5rem;
+    z-index: 11;
+    overflow: hidden;
+    cursor: pointer;
+}
+main aside.banner_F>div>p{
+    margin-right: 2rem;
+    float: left;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url(../imgs/SVG/stop-b.svg) no-repeat 0 0;
+}
+main aside.banner_F>div>ul{
+    width: 17.4rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main aside.banner_F>div>ul>li{
+    flex: 0 0 auto;
+    width: 5.3rem;
+    height: .5rem;
+    border: .15rem solid #fff;
+    border-radius: 2rem;
+    box-sizing: border-box;
+}
+main aside.banner_F>div>ul>li.on{
+    background-color: #fff;
+}
+
+/* 스크롤버튼 */
+main aside.banner_F>p:last-child{
+    position: absolute;
+    right: calc(50% - 5.5rem); bottom: 0;
+    z-index: 12;
+    width: 11rem; height: 4rem;
+    border-radius: .5rem .5rem 0 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 4rem;
+    color: #fff;
+    text-align: center;
+    background: url(../imgs/SVG/arrow-d-l.svg) no-repeat 50% 90%;
+    background-size: 1rem ;
+    background-color: #e30013;
+    transition: all .5s ease;
+}
+
+main aside.banner_F>p.fixed{
+    position: fixed;
+    bottom: 2rem; right: 2rem;
+    width: 4rem; height: 4rem;
+    background-image:none;
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 4rem;
+}
+main aside.banner_F>p.fixed>a{    
+    color: #fff;
+}
+
+/* 브랜드, 신제품 소개 */
+
+div.common section{
+    margin-top: 4rem;
+    text-align: center;
+}
+div.common section h1{
+    position: relative;
+    display: inline-block;
+    margin-bottom: 5rem;
+    font-size: 2.1rem;
+    line-height: 5.8rem;
+    font-weight: 900;
+    color: #e30013;
+}
+div.common section h1::before{
+    content: "";
+    position: absolute;
+    width: 4rem; height: .2rem;
+    background-color: #e30013;
+}
+div.common section h1::after{
+    content: "";
+    position: absolute;
+    width: 4rem; height: .2rem;
+    background-color: #e30013;
+}
+div.brand section h1::before{
+    top: 0; left: 25%;
+}
+div.brand section h1::after{
+    bottom: 0; left: 25%;
+}
+div.common section>p:first-of-type{
+    margin: 0 auto;
+    font-size: 2.1rem;
+    line-height: 5rem;
+    color: #606060;
+}
+/* 더보기 */
+div.common section p:nth-of-type(2){
+    display: inline-block;
+    width: 14rem;
+    height: 4rem;
+    margin-top: 5rem;
+    border: .1rem solid #e30013;
+    box-sizing: border-box;
+    text-align: start;
+}
+div.common section p a{
+    display: block;
+    padding:0 2.5rem;
+    font-size: 1.8rem;
+    line-height: 4rem;
+    color: #e30013;
+    background: url(../imgs/SVG/arrow-r.svg) no-repeat 90% 50%;
+    background-size: 3.2rem;
+}
+
+/* 브랜드 3가지 */
+div.brand section ul{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    width: 40rem;
+    height: 40rem;
+}
+
+div.brand section ul li {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 40rem;
+    text-align: center;
+}
+div.brand section ul li.on{
+    z-index: 5;
+}
+div.brand section ul li:nth-child(1){
+    background: url(../imgs/milk.jpg) no-repeat 0 0;
+}
+div.brand section ul li:nth-child(2){
+    background: url(../imgs/img_rosfarm.jpg) no-repeat 0 0;
+}
+div.brand section ul li:nth-child(3){
+    background: url(../imgs/img_pigs.jpg) no-repeat 0 0;
+}
+div.brand section ul li a{
+    display: block;
+    width: 100vw;
+    height: 100%;
+}
+
+div.brand section ul li:not(:last-child) a img{
+    padding-top: 40%;
+}
+div.brand section ul li:last-child a img{
+    padding-top: 30%;
+}
+
+
+/* 파스퇴르 배너 */
+div.banner_c{
+    min-height: 60rem;
+    background: url(../imgs/cow-milk.jpg) no-repeat center/cover;
+}
+div.banner_c aside{
+    margin: 0 auto;
+    padding-top: 4rem;
+    width: 60%;
+}
+div.banner_c aside h1 img{
+    width: 18rem;
+}
+div.banner_c aside p{
+    margin-top: 3rem;
+    font: 500 2.5rem/4rem sans-serif;
+    color: #fff;
+}
+
+/* 신제품 */
+div.product{
+    overflow: hidden;
+}
+div.product section h1::before{
+    top: 0; left: 35%;
+}
+div.product section h1::after{
+    bottom: 0; left: 35%;
+}
+div.product section>ul{
+    margin: 0 auto;
+    position: relative;
+    margin-top:6rem;
+    margin-bottom: 11rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 90vw;
+    height: 42vh;
+}
+div.product section>ul>li{
+    flex: 1 1 auto;
+    padding-bottom: 2rem;
+    border-bottom:.2rem solid #606060 ;
+    cursor: pointer;
+}
+div.product section>ul>li span{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #606060;
+}
+div.product section>ul>li>ul{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 60% 60%;
+    position: absolute;
+    top: 7rem; left: 0;
+    width: 90vw;
+}
+div.product section>ul.productUlM>li.on{
+    border-bottom:.2rem solid #E30013 ;
+}
+div.product section>ul>li>ul>li{
+    flex: 1 0 auto;
+}
+div.product section>ul>li>ul>li>a img{
+    width: 90%;
+}
+
+
+
+/* sns */
+div.sns{
+    background: #EFEFEF;
+    padding-top: .1rem;
+    width: 100vw;
+    min-height: 50rem;
+}
+div.sns section h1::before{
+    top: 0; left: 42%;
+}
+div.sns section h1::after{
+    bottom: 0; left: 42%;
+}
+div.sns section>ul{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 90vw;
+    text-align: center;
+}
+div.sns section>ul>li{
+    border-bottom: .2rem solid #606060;
+    padding-bottom: 1rem;
+    flex: 1 1 auto;  
+    cursor: pointer;
+}
+div.sns section>ul>li.on{
+    border-bottom: .2rem solid #E30013;
+
+}
+div.sns section>ul>li span{
+    font: 400 1.5rem/1.5rem sans-serif;
+    color: #606060;
+}
+div.sns section>ul>li>ul{
+    display: flex;
+    font-size: 1.8rem;
+}
+div.sns section>ul>li:nth-child(2)>ul{
+    display: none;
+}
+div.sns section>ul>li>ul>li{    
+    position: absolute;
+    top: 6rem; left: 0;
+}
+div.sns section>ul>li>ul>li>span{
+    margin-top: 3rem;
+    margin-right: 1rem;
+    padding: .3rem 1.4rem;
+    border: .2rem solid #A5A5A5;
+    border-radius: 6rem;
+    color: #606060;
+    cursor: pointer;
+}
+div.sns section>ul>li>ul>li a{
+    color: #606060;
+    display: block;
+}
+div.sns section>ul>li>ul>li a img{
+    width: 90vw;
+}
+/* div.sns section>ul>li.blog>ul{
+    position: absolute;
+    top: 14.5rem; left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+div.sns section>ul>li>ul>li>ul{
+    display: flex;
+    position: absolute;
+    top: 18rem; left: 0;
+}
+div.sns section>ul>li>ul>li>ul>li>a{
+    display: block;
+}
+div.sns section>ul>li>ul>li>ul>li>a>img{
+    width: 33rem;
+}
+
+
+
+/* 하단아이콘메뉴 */
+div.iconMenu{
+    background: #797979;
+}
+div.iconMenu>div{
+    margin: 0 auto;
+}
+div.iconMenu>div>ul.iconUl{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    height: 20rem;
+}
+div.iconMenu>div>ul.iconUl>li{
+    position: relative;
+    flex: 1 1 auto;
+}
+div.iconMenu>div>ul.iconUl>li>a{
+    display: block;
+    font: 700 1.3rem/2rem sans-serif;
+    color: #fff;
+}
+div.iconMenu>div>ul.iconUl>li>a>p{
+    padding-top: 12rem;
+}
+
+div.iconMenu>div>ul.iconUl>li:first-child>a>p{
+    background: url(../imgs/SVG/notice.svg) no-repeat 50% 35%;
+    background-size: 7rem;
+}
+div.iconMenu>div>ul.iconUl>li:nth-child(2)>a>p{
+    background: url(../imgs/SVG/qna.svg) no-repeat 50% 35%;
+    background-size: 7rem;
+}
+div.iconMenu>div>ul.iconUl>li:nth-child(3)>a>p{
+    background: url(../imgs/SVG/news.svg) no-repeat 50% 35%;
+    background-size: 7rem;
+}
+div.iconMenu>div>ul.iconUl>li:nth-child(4)>a>p{
+    background: url(../imgs/SVG/mall.svg) no-repeat 50% 35%;
+    background-size: 7rem;
+}
+div.iconMenu>div>ul.iconUl>li:hover>a{
+    color: #e30013;
+}

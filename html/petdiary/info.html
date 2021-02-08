@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/info.css">
+        <title>반려동물 정보 등록</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+            $(function(){
+                $('.box').click(function(){
+                    $(this).css('background-color','#FFF1D2');
+                });
+                $('.maro').click(function(){
+                    $(this).css({'background-image':'url(imgs/maro.png)','background-size':'12.4rem','background-color':'#FFF1D2'});
+                });
+            });
+        </script>
+        <style>            
+            html{
+                font-size: 62.5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header_1">
+            <div>
+                <header>
+                    <h1>반려동물 정보 등록</h1>
+                    <p>
+                        <a href="index.html">
+                            <img src="imgs/prev_01.png" alt="이전으로">
+                        </a>
+                    </p>
+                </header>
+                <main>
+                    <h1 class="hidden">정보 상세 입력</h1>
+
+                    <form action="petdiary.jsp">
+                        <fieldset>
+                            <div class="m_photo">
+                                <p class="more">+</p>
+                                <p class="photo">사진등록</p>
+                            
+                                <div class="maro">
+                                </div>
+                            </div>
+
+                            <div class="pet_1">
+                                <label for="cat" class="pet"><img src="imgs/i_cat.png" alt="고양이"></label>
+                                <label for="dog" class="pet"><img src="imgs/i_dog.png" alt="강아지"></label>
+                                
+                                <input type="radio" name="pet" id="cat" class="pet1">
+                                <input type="radio" name="pet" id="dog" class="pet1">
+                            </div>
+
+                            <div class="box_1">
+                                <div>
+                                    <label for="names" class="ment">· 이름</label>
+                                    <input type="text" name="names" id="names" class="box">
+                                </div>
+                                <div>
+                                    <label for="birth" class="ment">· 생년월일</label>
+                                    <input type="text" name="birth" id="birth" class="box" placeholder="ex) 2016.03.28">
+                                </div>
+
+                                <div>
+                                    <p class="ment">· 성별</p>
+                                    <div class="radio-items">
+                                        <input type="radio" name="opt" id="opt1">
+                                        <label for="opt1">남자아이</label>
+                                        <input type="radio" name="opt" id="opt2">
+                                        <label for="opt2">여자아이</label>
+                                    </div>
+                                </div>
+
+                                <label for="weights" class="ment">· 몸무게</label>
+                                <input type="text" name="weights" id="weights" class="weig box" placeholder="ex) 4.8">
+
+                                
+                                <div>
+                                    <p class="ment">· 중성화여부</p>
+                                    <div class="radio-items">
+                                        <input type="radio" name="opt1" id="opt3">
+                                        <label for="opt3">예</label>
+                                        <input type="radio" name="opt1" id="opt4">
+                                        <label for="opt4">아니오</label>
+                                    </div>
+                                </div>
+                                <div class="sub_c">
+                                <input type="submit" value="등록" class="sub">
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+                </main>
+            </div>
+        </div>
+        <script>
+            var subM = document.querySelector(".sub");
+            subM.addEventListener("click", function(e){
+                e.preventDefault();
+                window.location.href = "month.html";
+            });
+        </script>
+    </body>
+</html>
