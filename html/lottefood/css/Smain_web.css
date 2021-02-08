@@ -9,6 +9,7 @@ main aside.banner_F{
     position: relative;
     min-height: 83.3rem;
 }
+
 main aside.banner_F>ul>li{
     position: absolute;
     top: 0; left: 0;

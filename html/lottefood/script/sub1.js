@@ -48,10 +48,4 @@ $(function(){
         }
     });
 
-    // $(".point").children("li").mouseenter(function(){
-    //     $(this).addClass("on");
-    // }).mouseleave(function(){
-    //     $(this).removeClass("on");
-    // });
-
 });//제이쿼리 레디 끝
